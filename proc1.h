@@ -11,6 +11,9 @@ SC_MODULE(proc1) {
 
 	void task1();
 	void task2();
+	void task3();
+	void task4();
+	void task5();
 
 	SC_CTOR(proc1)
 		: subm("subm")
@@ -23,6 +26,15 @@ SC_MODULE(proc1) {
 		sensitive << clock.pos();
 
 		SC_METHOD(task2);
+		sensitive << clock.pos();
+
+		SC_METHOD(task3);
+		sensitive << clock.pos();
+
+		SC_METHOD(task4);
+		sensitive << clock.pos();
+
+		SC_METHOD(task5);
 		sensitive << clock.pos();
 	}
 

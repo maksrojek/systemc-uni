@@ -58,7 +58,28 @@ void proc1::task1() {
 
 void proc1::task2() {
 	int temp = state.read();
-	if (temp != 4 && temp != 5 && temp != 6) {
+	if (temp == 0) {
+		cout << "proc1-task2: state: " << temp << endl;
+	}
+}
+
+void proc1::task3() {
+	int temp = state.read();
+	if (temp == 1) {
+		cout << "proc1-task2: state: " << temp << endl;
+	}
+}
+
+void proc1::task4() {
+	int temp = state.read();
+	if (temp == 2) {
+		cout << "proc1-task2: state: " << temp << endl;
+	}
+}
+
+void proc1::task5() {
+	int temp = state.read();
+	if (temp == 3) {
 		cout << "proc1-task2: state: " << temp << endl;
 	}
 }
